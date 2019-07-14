@@ -1,10 +1,10 @@
 {
-  "name": "gambling-web-api",
+  "name": "node-express-typescript-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "serve": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "@types/node": "^12.6.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
+    "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "mongoose": "^5.6.4",
     "winston": "^3.2.1"
