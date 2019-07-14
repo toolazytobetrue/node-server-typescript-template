@@ -1,2 +1,2 @@
-# node-express-typescript-template
-Node Express - TypeScript Template
+# Node Express - TypeScript Template
+
