@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as jwt from 'jsonwebtoken';
 const privateKey = fs.readFileSync('template.key');
 const pubKey = fs.readFileSync('template.key.pub');
-const verifyOptions = {
+const verifyOptions: any = {
     algorithm: 'RS256',
     audience: 'template',
     expiresIn: '12h',
