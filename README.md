@@ -13,11 +13,14 @@ db.dropDatabase()
 ````
 
 
+```
 MONGODB_URI=mongodb://admin:password@127.0.0.1:27017/template
 MONGODB_URI_LOCAL=mongodb://admin:password@127.0.0.1:27017/template
 NODE_ENV=dev
+```
 
 
-
+```
 ssh-keygen -t rsa -b 4096 -f template.key
 openssl rsa -in template.key -pubout -outform PEM -out template.key.pub
+```
