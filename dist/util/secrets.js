@@ -7,7 +7,6 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const fs_1 = __importDefault(require("fs"));
 const logger_1 = __importDefault(require("./logger"));
 if (fs_1.default.existsSync('.env')) {
-    logger_1.default.debug('Using .env file to supply config environment variables');
     dotenv_1.default.config({ path: '.env' });
 }
 else {
