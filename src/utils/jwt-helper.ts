@@ -1,14 +1,14 @@
 
 import * as fs from 'fs';
 import * as jwt from 'jsonwebtoken';
-const privateKey = fs.readFileSync('template.key');
-const pubKey = fs.readFileSync('template.key.pub');
-const verifyOptions: any = {
+export const privateKey = fs.readFileSync('template.key');
+export const pubKey = fs.readFileSync('template.key.pub');
+const verifyOptions: jwt.SignOptions = {
     algorithm: 'RS256',
     audience: 'template',
     expiresIn: '12h',
-    issuer: 'templateserver',
-    subject: 'admin_credentials',
+    issuer: 'template',
+    subject: 'credentials',
 };
 
 export function signData(data: any, cb: CallableFunction) {
